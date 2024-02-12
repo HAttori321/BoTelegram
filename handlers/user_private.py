@@ -19,11 +19,7 @@ async def menu_cmd(message:types.Message):
 @user_private_router.message(Command("help"))
 async def menu_cmd(message:types.Message):
     await message.answer("Hello im a new bot and i want  to you")
-
-@user_private_router.message((F.photo)| F.text().contains("кажі"))
-async def photo_mess(message:types.Message):
-    await message.answer("I understand that it`s photo but i can`t explain it!")
-
+    
 @user_private_router.message()
 async def echo(message:types.Message):
     listOfPhrase = ['hi','hello','привіт','здоров','здоровенькі були','здоровенькі']
